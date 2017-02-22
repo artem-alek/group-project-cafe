@@ -7,7 +7,7 @@ function fillHtml () {
     <div class = "guests">Number of Guests</div>
     <input class="inputGuests"/>
     <div class = "date">Date</div>
-    <input class="inputDate"/>
+    <input class="inputDate" placeholder="month/date/year"/>
     <div class = "notes">Special Notes</div>
     <textarea class="textarea"></textarea>
     <div class = "seating">Seating Preference</div>
