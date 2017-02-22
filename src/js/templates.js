@@ -1,13 +1,13 @@
 function fillHtml () {
-    return `
+  return `
     <div class = "name">Full Name</div>
-    <input class="form-field"="${field.name}"/>
+    <input class="form-field"="$"/>
     <div class = "guests">Number of Guests</div>
-    <input class="form-field"="${field.guests}"/>
+    <input class="form-field"="/>
     <div class = "date">Date</div>
-    <input class="form-field"="${field.date}"/>
+    <input class="form-field"/>
     <div class = "notes">Special Notes</div>
-    <textarea class="form-field tall" ="${field.notes}"></textarea>
+    <textarea class="form-field tall"></textarea>
     <div class = "seating">Seating Preference</div>
     <div>
      <select class="form-field">
