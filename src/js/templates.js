@@ -29,4 +29,20 @@ function thankyouTemplate (field) {
     `;
 }
 
-export { fillHtml, thankyouTemplate };
+function menuTemplate(product) {
+     return `
+               <div class="menu-item">
+               <div class="item"> ${product.item}</div>
+               <div class="price"> ${product.price}</div>
+               <div class="description"> ${product.description}</div>
+               </div>
+           `
+}
+
+function menuTitle (title) {
+  return `
+    <div class="menu-title">${title.toUpperCase()}</div>
+  `
+}
+
+export { fillHtml, thankyouTemplate, menuTemplate, menuTitle };
