@@ -13,14 +13,14 @@ function sortMenu(items) {
   // pullData(items.sides);
 }
 
-  function pullData (menu, title) {
-    $('.testing').append(menuTitle(title));
-    for (var i=0; i < menu.length; i++) {
-      var data = menu[i];
-      var html = menuTemplate(data);
-      $('.testing').append(html);
-    }
+function pullData (menu, title) {
+  $('.testing').append(menuTitle(title));
+  for (var i=0; i < menu.length; i++) {
+    var data = menu[i];
+    var html = menuTemplate(data);
+    $('.testing').append(html);
   }
+}
   // for (var i =0; i < items.appetizers.length; i++) {
   //   var product = items.appetizers[i];
   //   var html = menuTemplate(product);
