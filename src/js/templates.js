@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 function fillHtml () {
   return `
     <div class = "name">Full Name</div>
@@ -29,20 +27,29 @@ function thankyouTemplate (field) {
     `;
 }
 
-function menuTemplate(product) {
-     return `
+function menuTemplate (product) {
+  return `
                <div class="menu-item">
                <div class="item"> ${product.item}</div>
                <div class="price"> ${product.price}</div>
                <div class="description"> ${product.description}</div>
                </div>
-           `
+           `;
 }
 
 function menuTitle (title) {
   return `
     <div class="menu-title">${title.toUpperCase()}</div>
-  `
+  `;
+}
+
+function newsTemplate (options) {
+  return `
+    <div class="news-key">Latest News</div>
+    <span class="news-title>${options.title}</span>
+    <span class="news-date">${options.date_published}</span>
+    <div class="news-post">${options.post}</div>
+  `;
 }
 
 function addSocial () {
@@ -50,6 +57,7 @@ function addSocial () {
       <a href = "#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
       <a href = "#"><i class="fa fa-twitter fa-3x " aria-hidden="true"></i></a>
       <a href = "#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-  `
+  `;
 }
-export { fillHtml, thankyouTemplate, menuTemplate, menuTitle, addSocial };
+
+export { fillHtml, thankyouTemplate, menuTemplate, menuTitle, newsTemplate, addSocial};
