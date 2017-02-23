@@ -28,8 +28,21 @@ function thankyouTemplate (field) {
       <div class="thank-you">Thank You ${field.name}! We have your ${field.seating} table for ${field.guests} guests on ${field.date}. We look forward to serving you then!"</div>
     `;
 }
-//     <div class = "name">Full Name</div>
-//     <input class="form-field"="$"/>
-// }
 
-export { fillHtml, thankyouTemplate };
+function menuTemplate(product) {
+     return `
+               <div class="menu-item">
+               <div class="item"> ${product.item}</div>
+               <div class="price"> ${product.price}</div>
+               <div class="description"> ${product.description}</div>
+               </div>
+           `
+}
+
+function menuTitle (title) {
+  return `
+    <div class="menu-title">${title.toUpperCase()}</div>
+  `
+}
+
+export { fillHtml, thankyouTemplate, menuTemplate, menuTitle };
