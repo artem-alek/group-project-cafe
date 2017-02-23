@@ -28,8 +28,5 @@ function thankyouTemplate (field) {
       <div class="thank-you">Thank You ${field.name}! We have your ${field.seating} table for ${field.guests} guests on ${field.date}. We look forward to serving you then!"</div>
     `;
 }
-//     <div class = "name">Full Name</div>
-//     <input class="form-field"="$"/>
-// }
 
 export { fillHtml, thankyouTemplate };

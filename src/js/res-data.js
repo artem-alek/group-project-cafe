@@ -9,7 +9,7 @@ function reservation(event) {
   field.date = $(".inputDate").val();
 
   console.log(field);
-  $(".container").html(thankyouTemplate(field));
+  $(".tab-content").html(thankyouTemplate(field));
 }
 
 export {reservation}
