@@ -45,4 +45,11 @@ function menuTitle (title) {
   `
 }
 
-export { fillHtml, thankyouTemplate, menuTemplate, menuTitle };
+function addSocial () {
+  return `
+      <a href = "#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+      <a href = "#"><i class="fa fa-twitter fa-3x " aria-hidden="true"></i></a>
+      <a href = "#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+  `
+}
+export { fillHtml, thankyouTemplate, menuTemplate, menuTitle, addSocial };
