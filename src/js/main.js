@@ -6,6 +6,8 @@ import { locationTemplate } from './location';
 import { specialsGenerate } from './specials';
 import { menuButton } from './menuData';
 import { storyGenerate } from './story';
+import { placePhotos } from './flicker';
+
 
 // Generate tab container & our story
 $('.tab-container').append(makeBoxes);
@@ -29,3 +31,6 @@ specialsGenerate();
 
 // Generate loction div dynamically
 $('.location').html(locationTemplate);
+
+// Generate Photos
+$('.food-flicker').append(placePhotos);

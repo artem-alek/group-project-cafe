@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 function fillHtml () {
   return `
     <div class = "name">Full Name</div>
@@ -77,4 +79,14 @@ function ourStory () {
     <img src="http://s3.crackedcdn.com/phpimages/article/4/5/6/159456.jpg?v=2"/>
   `;
 }
-export { fillHtml, thankyouTemplate, menuTemplate, menuTitle, newsTemplate, addSocial, ourStory};
+
+function photoTemplate (photo) {
+  $('.photos-images').append(`
+    <div class="column photo-stream">
+      <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg"/>
+    </div>
+  `);
+}
+
+export { fillHtml, thankyouTemplate,
+  menuTemplate, menuTitle, newsTemplate, addSocial, ourStory, photoTemplate };
