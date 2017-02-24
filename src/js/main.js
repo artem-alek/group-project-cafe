@@ -30,14 +30,7 @@ specialsGenerate();
 // Generate loction div dynamically
 $('.location').html(locationTemplate);
 
-//function to light up sprite if sprite is hovered and if data field is "1"
-
-
- // $(".fa-exclamation-circle").hover(function allergiesTemplate() {
- //      console.log ()
- //     //$("#msg_div").hide();
- //    // $("#msg_div").show();
- // });
+//jquery function to make pop-up info
 $('.fa-exclamation-circle').tooltip();
 $('.fa-star').tooltip();
 $('.fa-fire').tooltip();

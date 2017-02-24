@@ -22,6 +22,9 @@ function pullData (menu, title) {
 }
 
 function menuButton (event) {
+  $('.story-button').removeClass('is-active');
+  $('.reservation-button').removeClass('is-active');
+  $('.menu-button').addClass('is-active');
   $('.tab-content').empty();
   getMenu().then(sortMenu);
 }

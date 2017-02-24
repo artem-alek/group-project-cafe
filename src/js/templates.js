@@ -68,5 +68,21 @@ function addSocial () {
   `;
 }
 
-
-export { fillHtml, thankyouTemplate, menuTemplate, menuTitle, newsTemplate, addSocial};
+function ourStory () {
+  return `
+    <div class="story">We are proud of our little corner cafe in downtown Atlanta, Georgia.
+    Artem's has been a staple cafe that has been providing decades of perfect latte's
+    and the sweetest deserts. Many celeberties have enjoyed Artem's services. The founders
+    of Artem's were immigrants from Europe and never imaged that their small cafe would gain
+    such popularity in the cinema world. Two decades later their children run the cafe
+    and their popularity still grows. Many more movies are using our cafe since the recent
+    annoucment that Hollywood is moving to Atlanta! Here are some of the movies we been in!
+    </div>
+    <img src="http://static.srcdn.com/wp-content/uploads/Famous-Reused-Movie-Sets-Quality-Cafe-Diner.jpg"/>
+    <div class="story">Our cafe has been in many movies and TV Shows, can been seen in Mad Men when Don Draper talks with his half-brother? That was also the Artem's Cafe, only with '60s hairdos and indoor smoking allowed.
+    <img src="http://s3.crackedcdn.com/phpimages/article/4/5/1/159451_v3.jpg"/>
+    <div class ="story">Here's Brad Pitt discussing some serious stuff with ... Vince Vaughn in Mr. and Mrs. Smith:
+    <img src="http://s3.crackedcdn.com/phpimages/article/4/5/6/159456.jpg?v=2"/>
+  `;
+}
+export { fillHtml, thankyouTemplate, menuTemplate, menuTitle, newsTemplate, addSocial, ourStory};
