@@ -30,9 +30,17 @@ function thankyouTemplate (field) {
 function menuTemplate (product) {
   return `
                <div class="menu-item">
-               <div class="item"> ${product.item}</div>
-               <div class="price"> ${product.price}</div>
-               <div class="description"> ${product.description}</div>
+               <div class="column item"> ${product.item}</div>
+               <div class="column price"> ${product.price}</div>
+               <div class="columns social">
+                <div class="column is-three-quarters description"> ${product.description}</div>
+                <div class="column is-one-quarter sprites">
+                  <i class="fa fa-exclamation-circle fa-2x" title="This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance." aria-hidden="true"></i>
+                  <i class="fa fa-star fa-2x" title="We have been doing this a long time and this item has become one of our favorites." aria-hidden="true"></i>
+                  <i class="fa fa-fire fa-2x" title="This item is spicy, please handle with care and drink lots of water." aria-hidden="true"></i>
+                  <i class="fa fa-square fa-2x" title="This item contains no meat and has been prepared without the use of animal products." aria-hidden="true"></i>
+                </div>
+                  </div>
                </div>
            `;
 }
@@ -59,5 +67,6 @@ function addSocial () {
       <a href = "#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
   `;
 }
+
 
 export { fillHtml, thankyouTemplate, menuTemplate, menuTitle, newsTemplate, addSocial};

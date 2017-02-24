@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import {menuTemplate, menuTitle} from './templates';
+import {menuTemplate, menuTitle, allergiesTemplate} from './templates';
 import { getMenu } from './apiCalls';
 
 function sortMenu(items) {
@@ -16,6 +16,8 @@ function pullData (menu, title) {
     var data = menu[i];
     var html = menuTemplate(data);
     $('.tab-content').append(html);
+//function call will go and check sprites and then add class
+    spriteUpdate(data);
   }
 }
 
@@ -25,5 +27,25 @@ function menuButton (event) {
 }
 
 
+function spriteUpdate (data) {
+  if (data.allergies === 1) {
+    console.log(data.allergies)
+    $('.fa-exclamation-circle').addClass('active1');
+  }
+  if (data.favorite === 1) {
+    console.log(data.favorite)
+    $('.fa-star').addClass('active2');
+  }
+  if (data.spicy === 1) {
+    console.log(data.spicy)
+      $('.fa-fire').addClass('active3');
+  }
+  if (data.vegan === 1) {
+    console.log(data.vegan)
+      $('.fa-square').addClass('active4');
+  }
+}
 
-export {sortMenu, pullData, menuButton};
+
+
+export {sortMenu, pullData, menuButton, spriteUpdate};

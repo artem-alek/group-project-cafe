@@ -5,6 +5,7 @@
 }
  .tab-content {
    height: 500px;
+   padding: 0px 40px;
  }
 .fa-facebook-official {
   color: blue;
@@ -17,4 +18,68 @@
 .fa-instagram {
 color: orange;
 
+}
+.menu-title {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 18px 0px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 15px;
+
+}
+.item {
+font-size: 15px;
+font-weight: bold;
+float:left;
+padding: 14px 0px;
+}
+.price {
+font-size: 14px;
+color: grey;
+float: right;
+display: inline-block;
+}
+
+.description {
+  clear: both;
+  font-size: 12px;
+  padding-top: 0px;
+  overflow: hidden;
+  //max-height: 3.6em;
+}
+
+.description::after {
+//  content: "...";
+//  position: absolute;
+}
+
+.sprites {
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 26% !important;
+
+
+  i {
+    padding-left: 3px;
+    padding-right: 3px;
+    //outline: dotted red;
+  }
+}
+.active1 {
+  color:yellow;
+  }
+.active2 {
+  color:blue;
+  }
+.active3 {
+  color:red;
+  }
+.active4 {
+  color:green;
+  }
+
+.social {
+  clear:both;
+  //position: relative;
 }

@@ -7,6 +7,7 @@ import { specialsGenerate } from './specials';
 import { menuButton } from './menuData';
 import { addSocial} from './templates';
 
+
 // Generate tab container
 $('.tab-container').append(makeBoxes);
 
@@ -28,3 +29,16 @@ specialsGenerate();
 
 // Generate loction div dynamically
 $('.location').html(locationTemplate);
+
+//function to light up sprite if sprite is hovered and if data field is "1"
+
+
+ // $(".fa-exclamation-circle").hover(function allergiesTemplate() {
+ //      console.log ()
+ //     //$("#msg_div").hide();
+ //    // $("#msg_div").show();
+ // });
+$('.fa-exclamation-circle').tooltip();
+$('.fa-star').tooltip();
+$('.fa-fire').tooltip();
+$('.fa-square').tooltip();
