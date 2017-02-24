@@ -8,13 +8,12 @@ import { menuButton } from './menuData';
 import { storyGenerate } from './story';
 import { placePhotos } from './flicker';
 
-
-// Generate tab container & our story
+// Generate tab container
 $('.tab-container').append(makeBoxes);
-storyGenerate();
-$('.story-tab').click(storyGenerate);
+$('.story-tab').html(storyGenerate);
 
-// Clickable buttons for tab Reservation & Menu
+// Clickable buttons for tab
+//added button for our story
 $('.reservation-tab').click(makeForm);
 $('.menu-tab').click(menuButton);
 
@@ -34,3 +33,9 @@ $('.location').html(locationTemplate);
 
 // Generate Photos
 $('.food-flicker').append(placePhotos);
+
+//jquery function to make pop-up info
+$('.fa-exclamation-circle').tooltip();
+$('.fa-star').tooltip();
+$('.fa-fire').tooltip();
+$('.fa-square').tooltip();
