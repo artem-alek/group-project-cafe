@@ -1,15 +1,16 @@
 import $ from 'jquery';
 import { makeBoxes, makeForm } from './tab-boxes';
-import { newsTemplate } from './templates';
+import { newsTemplate, addSocial } from './templates';
 import { getNews } from './apiCalls';
 import { locationTemplate } from './location';
 import { specialsGenerate } from './specials';
 import { menuButton } from './menuData';
-import { addSocial} from './templates';
-
+import { storyGenerate } from './story';
+import { placePhotos } from './flicker';
 
 // Generate tab container
 $('.tab-container').append(makeBoxes);
+$('.story-tab').html(storyGenerate);
 
 // Clickable buttons for tab
 //added button for our story
@@ -29,6 +30,9 @@ specialsGenerate();
 
 // Generate loction div dynamically
 $('.location').html(locationTemplate);
+
+// Generate Photos
+$('.food-flicker').append(placePhotos);
 
 //jquery function to make pop-up info
 $('.fa-exclamation-circle').tooltip();
