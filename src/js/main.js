@@ -1,17 +1,18 @@
 import $ from 'jquery';
 import { makeBoxes, makeForm } from './tab-boxes';
-import { newsTemplate } from './templates';
+import { newsTemplate, addSocial } from './templates';
 import { getNews } from './apiCalls';
 import { locationTemplate } from './location';
 import { specialsGenerate } from './specials';
 import { menuButton } from './menuData';
-import { addSocial} from './templates';
+import { storyGenerate } from './story';
 
-// Generate tab container
+// Generate tab container & our story
 $('.tab-container').append(makeBoxes);
+storyGenerate();
+$('.story-tab').click(storyGenerate);
 
-// Clickable buttons for tab
-//added button for our story
+// Clickable buttons for tab Reservation & Menu
 $('.reservation-tab').click(makeForm);
 $('.menu-tab').click(menuButton);
 
