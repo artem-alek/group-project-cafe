@@ -1,18 +1,18 @@
 import $ from 'jquery';
 import { makeBoxes, makeForm } from './tab-boxes';
-import { newsTemplate, addSocial } from './templates';
+import { newsTemplate } from './templates';
 import { getNews } from './apiCalls';
 import { locationTemplate } from './location';
 import { specialsGenerate } from './specials';
 import { menuButton } from './menuData';
-import { storyGenerate } from './story';
+import { addSocial} from './templates';
 
-// Generate tab container & our story
+
+// Generate tab container
 $('.tab-container').append(makeBoxes);
-storyGenerate();
-$('.story-tab').click(storyGenerate);
 
-// Clickable buttons for tab Reservation & Menu
+// Clickable buttons for tab
+//added button for our story
 $('.reservation-tab').click(makeForm);
 $('.menu-tab').click(menuButton);
 
@@ -29,3 +29,9 @@ specialsGenerate();
 
 // Generate loction div dynamically
 $('.location').html(locationTemplate);
+
+//jquery function to make pop-up info
+$('.fa-exclamation-circle').tooltip();
+$('.fa-star').tooltip();
+$('.fa-fire').tooltip();
+$('.fa-square').tooltip();
