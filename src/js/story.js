@@ -5,7 +5,7 @@ function storyGenerate () {
   $('.menu-button').removeClass('is-active');
   $('.reservation-button').removeClass('is-active');
   $('.story-button').addClass('is-active');
-  $('.tab-content').html(ourStory);
+  $('.tab-info').html(ourStory);
 }
 
 export { storyGenerate };

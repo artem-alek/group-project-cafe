@@ -27,6 +27,7 @@ function makeBoxes () {
         </li>
       </ul>
     </div>
+    <div class="tab-info"></div>
   `;
 }
 
@@ -34,7 +35,7 @@ function makeForm (event) {
   $('.menu-button').removeClass('is-active');
   $('.story-button').removeClass('is-active');
   $('.reservation-button').addClass('is-active');
-  $('.tab-content').html(fillHtml());
+  $('.tab-info').html(fillHtml());
   $('.reserve').click(reservation);
 }
 
