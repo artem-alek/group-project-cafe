@@ -7,10 +7,14 @@
    height: 500px;
    padding: 0px 40px;
  }
+ .fa-3x {
+   padding-left: 10px;
+   padding-right: 10px;
+ }
 .fa-facebook-official {
   color: blue;
-
 }
+
 .fa-twitter  {
   color: lightblue;
 }
@@ -28,6 +32,11 @@ color: orange;
   padding-bottom: 15px;
 
 }
+.zoom img {
+zoom: 100%;
+padding-top: 20px;
+}
+
 .item {
 font-size: 15px;
 font-weight: bold;
@@ -40,6 +49,7 @@ color: grey;
 float: right;
 display: inline-block;
 }
+
 
 .description {
   clear: both;
@@ -58,11 +68,12 @@ display: inline-block;
    padding-left: 10px;
    padding-right: 10px;
    width: 26% !important;
+   display: inline-table;
 
 
   i {
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
     //outline: dotted red;
   }
 }
@@ -82,4 +93,12 @@ display: inline-block;
 .social {
   clear:both;
   //position: relative;
+}
+.social-bar-top {
+  float: right;
+  margin-top: 45px;
+}
+.news {
+  max-height: 370px;
+  overflow: auto;
 }
