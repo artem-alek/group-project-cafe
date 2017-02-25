@@ -10,7 +10,8 @@ import { placePhotos } from './flicker';
 
 // Generate tab container
 $('.tab-container').append(makeBoxes);
-$('.story-tab').html(storyGenerate);
+$('.story-tab').click(storyGenerate);
+$('.tab-info').html(storyGenerate);
 
 // Clickable buttons for tab
 //added button for our story

@@ -94,6 +94,11 @@ display: inline-block;
   clear:both;
   //position: relative;
 }
+
+.photo-stream img {
+  width: 100%;
+}
+
 .social-bar-top {
   float: right;
   margin-top: 45px;

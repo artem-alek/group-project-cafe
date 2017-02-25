@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import {menuTemplate, menuTitle, allergiesTemplate} from './templates';
+import { menuTemplate, menuTitle } from './templates';
 import { getMenu } from './apiCalls';
 
 function sortMenu(items) {
@@ -10,12 +10,11 @@ function sortMenu(items) {
 }
 
 function pullData (menu, title) {
-  //console.log(menu, title)
-  $('.tab-content').append(menuTitle(title));
+  $('.tab-info').append(menuTitle(title));
   for (var i=0; i < menu.length; i++) {
     var data = menu[i];
     var html = menuTemplate(data);
-    $('.tab-content').append(html);
+    $('.tab-info').append(html);
 //function call will go and check sprites and then add class
     spriteUpdate(data);
   }
@@ -25,27 +24,23 @@ function menuButton (event) {
   $('.story-button').removeClass('is-active');
   $('.reservation-button').removeClass('is-active');
   $('.menu-button').addClass('is-active');
-  $('.tab-content').empty();
+  $('.tab-info').empty();
   getMenu().then(sortMenu);
 }
 
 
 function spriteUpdate (data) {
   if (data.allergies === 1) {
-    console.log(data.allergies)
     $('.fa-exclamation-circle').addClass('active1');
   }
   if (data.favorite === 1) {
-    console.log(data.favorite)
     $('.fa-star').addClass('active2');
   }
   if (data.spicy === 1) {
-    console.log(data.spicy)
-      $('.fa-fire').addClass('active3');
+    $('.fa-fire').addClass('active3');
   }
   if (data.vegan === 1) {
-    console.log(data.vegan)
-      $('.fa-square').addClass('active4');
+    $('.fa-square').addClass('active4');
   }
 }
 
