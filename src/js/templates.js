@@ -62,9 +62,11 @@ function newsTemplate (options) {
 
 function addSocial () {
   return `
+    <div class="social-bar-top"> 
       <a href = "#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
-      <a href = "#"><i class="fa fa-twitter fa-3x " aria-hidden="true"></i></a>
+      <a href = "#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
       <a href = "#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+    </div>
   `;
 }
 
