@@ -14,8 +14,9 @@ function foodType (food) {
   food.forEach(function (foods) {
     if (foods.id === 25) {
       $('.specials').html(function () { return `
-        <div class="speicals-Title">Today's Special</div>
-        <img class="specials-image" src="http://www.foodofy.com/wp-content/uploads/2015/06/scallops-21.jpg"/>
+        <div class="specials-title">Today's Special</div>
+        <img class="specials-image"
+        src="http://www.foodofy.com/wp-content/uploads/2015/06/scallops-21.jpg"/>
         `;
       });
       $('.specials').append(menuTemplate(foods));

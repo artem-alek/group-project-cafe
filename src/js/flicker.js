@@ -6,7 +6,6 @@ function placePhotos () {
 
 function sortPhotos (info) {
   var infoData = info.photoset.photo;
-  console.log(infoData);
   infoData.forEach(photoTemplate);
 }
 

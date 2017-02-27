@@ -19,7 +19,7 @@ function fillHtml () {
      </select>
 
      </div>
-     <div class = "reserve">Reserve Table</div>
+     <a class="button is-primary is-outlined reserve">Reserve Table</a>
     `;
 }
 
@@ -33,14 +33,14 @@ function menuTemplate (product) {
   return `
                <div class="menu-item">
                <div class="column item"> ${product.item}</div>
-               <div class="column price"> ${product.price}</div>
+               <div class="column price"> $${product.price}</div>
                <div class="columns social">
                 <div class="column is-three-quarters description"> ${product.description}</div>
                 <div class="column is-one-quarter sprites">
-                  <i class="fa fa-exclamation-circle fa-2x" title="This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance." aria-hidden="true"></i>
-                  <i class="fa fa-star fa-2x" title="We have been doing this a long time and this item has become one of our favorites." aria-hidden="true"></i>
-                  <i class="fa fa-fire fa-2x" title="This item is spicy, please handle with care and drink lots of water." aria-hidden="true"></i>
-                  <i class="fa fa-square fa-2x" title="This item contains no meat and has been prepared without the use of animal products." aria-hidden="true"></i>
+                  <i class="fa fa-exclamation-circle fa-lg" title="This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance." aria-hidden="true"></i>
+                  <i class="fa fa-star fa-lg" title="We have been doing this a long time and this item has become one of our favorites." aria-hidden="true"></i>
+                  <i class="fa fa-fire fa-lg" title="This item is spicy, please handle with care and drink lots of water." aria-hidden="true"></i>
+                  <i class="fa fa-square fa-lg" title="This item contains no meat and has been prepared without the use of animal products." aria-hidden="true"></i>
                 </div>
                   </div>
                </div>
@@ -55,16 +55,18 @@ function menuTitle (title) {
 
 function newsTemplate (options) {
   return `
-    <div class="news-key">Latest News</div>
-    <span class="news-title>${options.title}</span>
-    <span class="news-date">${options.date_published}</span>
-    <div class="news-post">${options.post}</div>
+    <div class="news-container">
+      <div class="news-key">Latest News</div>
+      <h2 class="news-title"><a href="#">${options.title}</a></h2>
+      <h2 class="news-date">${options.date_published}</h2>
+      <p class="news-post">${options.post}</p>
+    </div>
   `;
 }
 
 function addSocial () {
   return `
-    <div class="social-bar-top"> 
+    <div class="social-bar-top">
       <a href = "#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
       <a href = "#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
       <a href = "#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
@@ -83,9 +85,9 @@ function ourStory () {
     annoucment that Hollywood is moving to Atlanta! Here are some of the movies we been in!
     </div>
     <img src="http://static.srcdn.com/wp-content/uploads/Famous-Reused-Movie-Sets-Quality-Cafe-Diner.jpg"/>
-    <div class="story">Our cafe has been in many movies and TV Shows, can been seen in Mad Men when Don Draper talks with his half-brother? That was also the Artem's Cafe, only with '60s hairdos and indoor smoking allowed.
+    <div class="story2">Our cafe has been in many movies and TV Shows, can been seen in Mad Men when Don Draper talks with his half-brother? That was also the Artem's Cafe, only with '60s hairdos and indoor smoking allowed.
     <img src="http://s3.crackedcdn.com/phpimages/article/4/5/1/159451_v3.jpg"/>
-    <div class ="story">Here's Brad Pitt discussing some serious stuff with ... Vince Vaughn in Mr. and Mrs. Smith:
+    <div class ="story2">Here's Brad Pitt discussing some serious stuff with ... Vince Vaughn in Mr. and Mrs. Smith:
     <img src="http://s3.crackedcdn.com/phpimages/article/4/5/6/159456.jpg?v=2"/>
   `;
 }
