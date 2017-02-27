@@ -1,9 +1,9 @@
 #Group Project Using Git Branches
 ##Live Site Link: http;//www.tiy-houseofkal-el-group-project-cafe.surge.sh
 
-###ReadMe for group project: "Artem's Restaurant"
-###Authors: Artem Aleksandruk and Kurt Wyckoff
-###Date:  Feb 25, 2017
+  ReadMe for group project: "Artem's Restaurant"
+  Authors: Artem Aleksandruk and Kurt Wyckoff
+  Date:  Feb 25, 2017
 
 ##This project demonstrates:
   1. First group project whereby the authors discussed the overall strategy, layout, individual responsibilities at the onset.
